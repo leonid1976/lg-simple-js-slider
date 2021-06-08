@@ -5,7 +5,8 @@
         var rect = element.getBoundingClientRect(),
           vWidth = window.innerWidth || doc.documentElement.clientWidth,
           vHeight = window.innerHeight || doc.documentElement.clientHeight,
-          elemFromPoint = function (x, y) { return document.elementFromPoint(x, y) };
+          elemFromPoint = function (x, y) { return document.elementFromPoint(x, y)}
+
         if (rect.right < 0 || rect.bottom < 0
           || rect.left > vWidth || rect.top > vHeight)
           return false;
